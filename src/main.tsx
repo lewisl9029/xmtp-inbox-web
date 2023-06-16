@@ -1,4 +1,6 @@
 import "./polyfills";
+import "@unocss/reset/tailwind.css";
+import "uno.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "@rainbow-me/rainbowkit/styles.css";

@@ -111,5 +111,64 @@
   // It's important to only include packages that will be used by your app in browsers here.
   // Including dev-time dependencies that run in node can result in deploy failures and poor
   // performance.
-  "npmPackages": {}
+  "npmPackages": {
+    "@rainbow-me/rainbowkit": {
+      "entryPoints": [
+        "/styles.css",
+        "/styles.css",
+        "/"
+      ]
+    },
+    "wagmi": {
+      "entryPoints": [
+        "/actions",
+        "/providers/infura",
+        "/chains",
+        "/providers/public",
+        "/"
+      ]
+    },
+    "date-fns": {
+      "entryPoints": [
+        "/locale",
+        "/"
+      ]
+    },
+    "@heroicons/react": {
+      "entryPoints": [
+        "/solid",
+        "/outline",
+        "/outline",
+        "/solid",
+        "/outline",
+        "/outline",
+        "/solid",
+        "/outline",
+        "/outline",
+        "/solid",
+        "/outline",
+        "/outline",
+        "/outline",
+        "/"
+      ]
+    },
+    "react-medium-image-zoom": {
+      "entryPoints": [
+        "/dist/styles.css",
+        "/"
+      ]
+    },
+    "@wagmi/core": {
+      "entryPoints": [
+        "/connectors/mock",
+        "/"
+      ]
+    },
+    "ethers": {
+      "entryPoints": [
+        "/lib",
+        "/"
+      ]
+    }
+  }
 }

@@ -17,24 +17,11 @@ const locale = {
   },
 };
 
-export const Root = ({ children }) => {
-  const [initialized, setInitialized] = useState(false);
+export const Root = ({ children }) => (
+  <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
+);
 
-  useEffect(() => {
-    const initI18n = async () => {
-      await initialize();
-      setInitialized(true);
-    };
-    initI18n();
-  }, []);
-
-  useEffect(() => {
-    i18n.changeLanguage(locale);
-  }, []);
-
-  return initialized ? (
-    <I18nextProvider i18n={i18n}>{children}</I18nextProvider>
-  ) : (
-    <div>Loading translations...</div>
-  );
+export const init = async () => {
+  await initialize();
+  await i18n.changeLanguage(locale);
 };

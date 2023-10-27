@@ -101,9 +101,16 @@
     "/polyfills.ts",
     "/main.tsx"
   ],
+  "scriptsTesting": [
+    "/polyfills.ts",
+    "/main.tsx"
+  ],
   "stylesheets": [
     "https://fonts.googleapis.com/css?family=Inter:400,500,600,700|Inconsolata:400,600,700&display=swap"
   ],
+  // "stylesheetsTesting": [
+  //   "https://fonts.googleapis.com/css?family=Inter:400,500,600,700|Inconsolata:400,600,700&display=swap"
+  // ],
   // NPM packages listed here will be installed by Reflame every time you update this file.
   //
   // It's important to only include packages that will be used by your app in browsers here.

@@ -34,6 +34,7 @@
   },
   "tailwindCompatibility": {
     "stylesheetPathname": "/globals.css",
+    "includeGlobalFormStyles": true,
     "theme": {
       "spacing": {
         "84": "21rem"

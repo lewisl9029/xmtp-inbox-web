@@ -18,7 +18,7 @@ interface TagProps {
 
 export const Tag = ({ text, icon, isLoading = false }: TagProps) => {
   let mappedIcon = icon ? iconMapping[icon] : undefined;
-  if (!mappedIcon) {
+  if (!mappedIcon && !isLoading) {
     mappedIcon = text.startsWith("0x")
       ? iconMapping[TagIcon.WALLET_ADDRESS]
       : isEnsName(text)

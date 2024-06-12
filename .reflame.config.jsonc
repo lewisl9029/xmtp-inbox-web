@@ -1,11 +1,11 @@
 {
-  // This is a JSON with Comments file.
+  // This is a JSON with Comments file. 2
   // It's basically JSON, with the addition of comments, and looser syntax
   // (trailing commas!).
   // Reflame uses this to identify your app.
-  "appId": "01H3N3HTS2MAWNK33P0K6QF386", // prod
+  // "appId": "01H3N3HTS2MAWNK33P0K6QF386", // prod
   // "appId": "01H30NCV90SQP7ZJDCG9P7RJRG", // prod fork
-  // "appId": "01H335HJ288YMK1YM60ZTVWF42", // dev
+  "appId": "01H335HJ288YMK1YM60ZTVWF42", // dev
   // This is what shows up in the browser's tab bar.
   "title": "Chat via XMTP",
   // This is the description that shows up in Google search.
@@ -29,8 +29,12 @@
     "mapIndexToDirectory": true,
     "packageJson": true
   },
+  "storybookCompatibility": {
+    "testStories": true,
+  },
   "tailwindCompatibility": {
     "stylesheetPathname": "/globals.css",
+    "includeGlobalFormStyles": true,
     "theme": {
       "spacing": {
         "84": "21rem"
@@ -98,9 +102,15 @@
     "/polyfills.ts",
     "/main.tsx"
   ],
+  "scriptsTesting": [
+    "/polyfills.ts",
+  ],
   "stylesheets": [
     "https://fonts.googleapis.com/css?family=Inter:400,500,600,700|Inconsolata:400,600,700&display=swap"
   ],
+  // "stylesheetsTesting": [
+  //   "https://fonts.googleapis.com/css?family=Inter:400,500,600,700|Inconsolata:400,600,700&display=swap"
+  // ],
   // NPM packages listed here will be installed by Reflame every time you update this file.
   //
   // It's important to only include packages that will be used by your app in browsers here.
